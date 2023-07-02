@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity implements Asynchtask {
         setContentView(R.layout.activity_main);
     }
     public void BtIngresar (View view){
-        EditText Nombre = findViewById(R.id.nombre);
-        EditText Contraseña = findViewById(R.id.contraseña);
+        EditText Nombre = findViewById(R.id.txtUsuario);
+        EditText Contraseña = findViewById(R.id.txtPassword);
         String nombre;
         String  contraseña;
         nombre=Nombre.getText().toString();
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements Asynchtask {
 
     @Override
     public void processFinish(String result) throws JSONException {
-        TextView respuesta =findViewById(R.id.respuesta);
+        TextView respuesta =findViewById(R.id.txtMensaje);
         JSONObject jsonrespuesta = new JSONObject(result);
 
         if (jsonrespuesta.has("error"))

@@ -40,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="162dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="153dp"
         android:text="PASSWORD:"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -57,7 +57,7 @@
         android:text="INGRESO" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/txtUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -69,7 +69,7 @@
         android:text="carlos@gmail.com" />
 
     <EditText
-        android:id="@+id/contraseña"
+        android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -81,7 +81,7 @@
         android:text="12345678" />
 
     <TextView
-        android:id="@+id/respuesta"
+        android:id="@+id/txtMensaje"
         android:layout_width="198dp"
         android:layout_height="222dp"
         android:layout_alignParentStart="true"
