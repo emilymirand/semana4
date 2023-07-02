@@ -51,7 +51,7 @@ public class ListaProductos extends AppCompatActivity implements Response.Listen
 
     @Override
     public void onErrorResponse(VolleyError error) {
-        TextView Informacion = (TextView)findViewById(R.id.txtListaProductos);
+        TextView Informacion = (TextView)findViewById(R.id.txtLista);
         Informacion.setText("ERROR");
     }
 
@@ -70,7 +70,7 @@ public class ListaProductos extends AppCompatActivity implements Response.Listen
                         +producto.getString("costo").toString()+", "+" "+" "+producto.getString("impuesto").toString()+"\n");
             }
 
-            TextView txtvolley = findViewById(R.id.txtListaProductos);
+            TextView txtvolley = findViewById(R.id.txtLista);
             txtvolley.setText(lstBancos.toString());
         } catch (JSONException e) {
             e.printStackTrace();
